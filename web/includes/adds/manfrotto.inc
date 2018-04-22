@@ -1,0 +1,1 @@
+<a href="http://gan.doubleclick.net/gan_click?lid=41000000032670860&pubid=21000000000305502"><img src="http://gan.doubleclick.net/gan_impression?lid=41000000032670860&pubid=21000000000305502" border=0 alt="Monfrotto.us-Quality Photography Equipment!  728x90 Banner"></a>

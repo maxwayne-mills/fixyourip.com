@@ -1,0 +1,3 @@
+dnstracer
+whois
+jwhois

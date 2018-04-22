@@ -1,0 +1,1 @@
+<a href="http://gan.doubleclick.net/gan_click?lid=41000000030262874&pubid=21000000000305502"><img src="http://gan.doubleclick.net/gan_impression?lid=41000000030262874&pubid=21000000000305502" border=0 alt="Acronis AntiVirus 2010 protects your family and their computers from phishing attacks and spammers"></a>

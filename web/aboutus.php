@@ -1,0 +1,76 @@
+<?php
+set_include_path (".:includes:../../includes");
+include 'header_aboutus.inc';
+
+echo "<center>";
+echo "<table width=50%>";
+echo "<tr>";
+        echo "<td align=left>";
+                include 'adds/google_add.inc';
+                echo "<table class=table>";
+                echo "<tr valign=bottom>";
+			echo "<td>";
+                                echo "<h1>FixYourIP</h1>";
+                        echo "</td>";
+			echo "<td>";
+                                echo "<font size=3><b><a href=/index.php>Home</a></b></font>";
+                        echo "</td>";
+			echo "<td>";
+                                echo "<font size=3><b><a href=/tools>Tools</a></b></font>";
+                        echo "</td>";
+                        echo "<td>";
+                                echo "<font size=3><b><a href=/aboutus.php>About</a></b></font>";
+                        echo "</td>";
+                        echo "<td>";
+                                echo "<font size=3><b><a href=/library/>Library</a></b></font>";
+                        echo "</td>";
+			echo "<td>";
+                                echo "<font size=3><b><a href=/reports/>Reports</a></b></font>";
+                        echo "</td>";
+                echo "</tr>";
+                echo "</table>";
+                echo "<br>";
+        echo "</td>";
+echo "</tr>";
+echo "</table>";
+echo "</center";
+
+echo "<center>";
+echo "<table width=50%>";
+echo "<tr>
+	<td align=left rowspan=2>";
+	echo "<h1>About </h1>";
+	echo "<p>This site came about as an alternative to DNSSTUFF when they morphed to a paid service. I have tried to provide tools that assist system administrators, network administrators and the internet on a whole to help solve any DNS, IP, mail and network problems.</p>";
+	echo "<br>";
+	echo "<p>Why did i start to create my own tools when there are comparable sites to dnsstuff.com. I have searched the internet and found alternatives to dnsstuff.com but they did not provide quick lookups, clean, informative results that provides a good alternative to dnsstuff.com.</p>";
+	echo"<br>";
+	echo "<p>Fixyourip uses all the basic network tools available to provide fast, accurate, clean informative  results.</p>";
+	echo"<br>";
+	echo "<p>Fixyourip will provide the following</p>";
+	echo"<br>";
+	echo "<ol>";
+	echo "<li>Online IP tools</li>";
+	echo "<li>Online DNS tools</li>";
+	echo "<li>Online Web tools</li>";
+	echo "<li>Malware Detection tools</li>";
+	echo "<li>Spam database lookup</li>";
+	echo "<li>Real Time blacklist lookup</li>";
+	echo "<li>Abuse contact for a domain</li>";
+	echo "<li>Abuse contact for a IP Address</li>";
+	echo "<li>IP Information</li>";
+	echo "<li>IP Owner</li>";
+	echo "<li>Who host that site information</li>";
+	echo "<li>Web information -page rank, server used etc.</li>";
+	echo "</ol>";
+	echo"<br>";
+	echo "<p>Fixyourip is an free alternative to dnsstuff.com that strives to be accurate, informative and fast.</p>";
+	echo "<p>If you have an idea for a new tool or have a problem with the site please email tools@fixyourip.com.</p>";
+	echo "</td>";
+echo "</tr>";
+echo "</table>";
+
+include 'includes/lookups.inc';
+include 'includes/adds/google_add.inc';
+echo "</center>";
+include 'includes/footer.inc';
+?>
