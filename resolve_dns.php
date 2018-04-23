@@ -47,12 +47,12 @@ if ($choice == "a") {
 
 		echo "<pre>";
                 echo "<h3>DNS Resolution Path</h3>";
-                echo shell_exec('/usr/bin/nettools.sh search '.$selected.'');
+                echo shell_exec('apps/nettools.sh search '.$selected.'');
                 echo "<br>";
                 echo "</pre>";
 
 		echo "<pre>";
-		echo shell_exec('/usr/bin/nettools.sh arecord '.$selected.'');
+		echo shell_exec('apps/nettools.sh arecord '.$selected.'');
 		echo "<br><br>";
 		echo "<g:plusone></g:plusone>";
 		echo "</pre>";
@@ -79,13 +79,13 @@ if ($choice == "ptr") {
 
                 echo "<pre>";
                 echo "<h3>DNS Resolution Path</h3>";
-                echo shell_exec('/usr/bin/nettools.sh search '.$selected.'');
+                echo shell_exec('apps/nettools.sh search '.$selected.'');
                 echo "<br>";
 		echo "<g:plusone></g:plusone>";
                 echo "</pre>";
 
                 echo "<pre>";
-                echo shell_exec('/usr/bin/nettools.sh arecordreverse '.$selected.'');
+                echo shell_exec('apps/nettools.sh arecordreverse '.$selected.'');
                 echo "<br><br>";
                 echo "</pre>";
 
@@ -105,14 +105,14 @@ if ($choice == "srv") {
 
                 echo "<pre>";
                 echo "<h3>DNS Resolution Path</h3>";
-                echo shell_exec('/usr/bin/nettools.sh search '.$selected.'');
+                echo shell_exec('apps/nettools.sh search '.$selected.'');
                 echo "<br>";
                 echo "</pre>";
 
                 echo "</pre>";
                 echo "<h4><b>SRV Records for $selected </b></h4>" ;
                 echo "<pre>";
-                echo shell_exec('/usr/bin/nettools.sh srvrecord '.$selected.'');
+                echo shell_exec('apps/nettools.sh srvrecord '.$selected.'');
                 echo "<br><br>";
                 echo "</pre>";
 
@@ -130,7 +130,7 @@ if ($choice == "any") {
 
                 echo "<pre>";
                 echo "<h3>DNS Resolution Path</h3>";
-                echo shell_exec('/usr/bin/nettools.sh search '.$selected.'');
+                echo shell_exec('apps/nettools.sh search '.$selected.'');
                 echo "<br>";
 		echo "<g:plusone></g:plusone>";
                 echo "</pre>";
@@ -138,7 +138,7 @@ if ($choice == "any") {
                 echo "</pre>";
                 echo "<h4><b>Any Records for $selected </b></h4>" ;
                 echo "<pre>";
-                echo shell_exec('/usr/bin/nettools.sh any_record '.$selected.'');
+                echo shell_exec('apps/nettools.sh any_record '.$selected.'');
                 echo "<br><br>";
                 echo "</pre>";
 
@@ -157,37 +157,37 @@ if ($choice == "all") {
 
                 echo "<pre>";
                 echo "<h3>DNS Resolution Path</h3>";
-                echo shell_exec('/usr/bin/nettools.sh search '.$selected.'');
+                echo shell_exec('apps/nettools.sh search '.$selected.'');
                 echo "<br>";
 		echo "<g:plusone></g:plusone>";
                 echo "</pre>";
 
                 echo "<pre>";
-                echo shell_exec('/usr/bin/nettools.sh arecord '.$selected.'');
+                echo shell_exec('apps/nettools.sh arecord '.$selected.'');
 		echo "<br>";
                 echo "</pre>";
 
                 echo "<h4>TXT Records for $selected</h4>" ;
 		echo "<pre>";
-                echo shell_exec(escapeshellcmd('/usr/bin/nettools.sh txtrecord '.$selected.''));
+                echo shell_exec(escapeshellcmd('apps/nettools.sh txtrecord '.$selected.''));
 		echo "<br>";
                 echo "</pre>";
 
 		echo "<pre>";
                 echo "<h4>MX records for $selected</h4>";
-                echo shell_exec('/usr/bin/nettools.sh mxrecord '.$selected.'');
+                echo shell_exec('apps/nettools.sh mxrecord '.$selected.'');
                 echo "<br>";
                 echo "</pre>";
 
                 echo "<pre>";
                 echo "<h4><b>A Records for MX</b></h4>" ;
-                echo shell_exec('/usr/bin/nettools.sh convertmx '.$selected.'');
+                echo shell_exec('apps/nettools.sh convertmx '.$selected.'');
                 echo "<br>";
                 echo "</pre>";
 
 		echo "<pre>";
                 echo "<h4><b>Reverse DNS records for IP address('s)</b></h4>" ;
-                echo shell_exec('/usr/bin/nettools.sh reversemxip '.$selected.'');
+                echo shell_exec('apps/nettools.sh reversemxip '.$selected.'');
                 echo "<br>";
 		echo "<g:plusone></g:plusone>";
                 echo "</pre>";
@@ -208,27 +208,27 @@ if ($choice == "mx") {
 
 		echo "<pre>";
 		echo "<h3>DNS Resolution Path</h3>";
-		echo shell_exec('/usr/bin/nettools.sh search '.$selected.'');
+		echo shell_exec('apps/nettools.sh search '.$selected.'');
 		echo "<g:plusone></g:plusone>";
 		echo "<br>";
 		echo "</pre>";
 
 		echo "<pre>";
 		echo "<h3>MX records for $selected</h3>";
-		echo shell_exec('/usr/bin/nettools.sh mxrecord '.$selected.'');
+		echo shell_exec('apps/nettools.sh mxrecord '.$selected.'');
 		echo "<br>";
 		echo "</pre>";
 
 		echo "<pre>";
 		echo "<h4><b>A Records for $choice</b></h4>" ;
-		echo shell_exec('/usr/bin/nettools.sh convertmx '.$selected.'');
+		echo shell_exec('apps/nettools.sh convertmx '.$selected.'');
 		echo "<g:plusone></g:plusone>";
 		echo "<br>";
                 echo "</pre>";
 
 		echo "<pre>";
                 echo "<h4><b>Reverse DNS records for IP address('s)</b></h4>" ;
-                echo shell_exec('/usr/bin/nettools.sh reversemxip '.$selected.'');
+                echo shell_exec('apps/nettools.sh reversemxip '.$selected.'');
                 echo "<br>";
                 echo "</pre>";
 		
@@ -254,14 +254,14 @@ if ($choice == "soa") {
 
 		echo "<pre>";
                 echo "<h3>DNS Resolution Path</h3>";
-                echo shell_exec('/usr/bin/nettools.sh search '.$selected.'');
+                echo shell_exec('apps/nettools.sh search '.$selected.'');
 		echo "<g:plusone></g:plusone>";
                 echo "<br>";
                 echo "</pre>";
 
                 echo "<h4><b>$choice Records for $selected </b></h4>" ;
 		echo "<pre>";
-		echo shell_exec('/usr/bin/nettools.sh soa '.$selected.'');
+		echo shell_exec('apps/nettools.sh soa '.$selected.'');
 		echo "<g:plusone></g:plusone>";
 		echo "</pre>";
 
@@ -283,21 +283,21 @@ if ($choice == "ns") {
 
 		echo "<pre>";
                 echo "<h3>DNS Resolution Path</h3>";
-                echo shell_exec('/usr/bin/nettools.sh search '.$selected.'');
+                echo shell_exec('apps/nettools.sh search '.$selected.'');
 		echo "<g:plusone></g:plusone>";
                 echo "<br>";
                 echo "</pre>";
 
 		echo "<pre>";
                 echo "<h4><b>$selected NS records</b></h4>" ;
-                echo shell_exec('/usr/bin/nettools.sh getns '.$selected.'');
+                echo shell_exec('apps/nettools.sh getns '.$selected.'');
 		echo "<g:plusone></g:plusone>";
 		echo "<br>";
                 echo "</pre>";
 
 		echo "<pre>";
                 echo "<h4><b>$selected NS records Locations</b></h4>" ;
-                echo shell_exec('/usr/bin/nettools.sh nsiplocation '.$selected.'');
+                echo shell_exec('apps/nettools.sh nsiplocation '.$selected.'');
 		echo "<g:plusone></g:plusone>";
                 echo "</pre>";
 
@@ -323,13 +323,13 @@ if ($choice == "cname") {
 
 		echo "<pre>";
                 echo "<h3>DNS Resolution Path</h3>";
-                echo shell_exec('/usr/bin/nettools.sh search '.$selected.'');
+                echo shell_exec('apps/nettools.sh search '.$selected.'');
                 echo "<br>";
                 echo "</pre>";
 
                 echo "<h4><b>$choice Records for $selected </b></h4>" ;
 		echo "<pre>";
-		echo shell_exec('/usr/bin/nettools.sh crecord '.$selected.'');
+		echo shell_exec('apps/nettools.sh crecord '.$selected.'');
 		echo "</pre>";
 		echo "<h4>&nbsp;</h4>";
                 echo "<font size=3><b>INFO</b></font>";
@@ -353,13 +353,13 @@ if ($choice == "txt") {
 
 		echo "<pre>";
                 echo "<h3>DNS Resolution Path</h3>";
-                echo shell_exec('/usr/bin/nettools.sh search '.$selected.'');
+                echo shell_exec('apps/nettools.sh search '.$selected.'');
                 echo "<br>";
                 echo "</pre>";
 		
                 echo "<h4><b>$choice Records for $selected </b></h4>" ;
                 echo "<pre>";
-                echo shell_exec(escapeshellcmd('/usr/bin/nettools.sh txtrecord '.$selected.''));
+                echo shell_exec(escapeshellcmd('apps/nettools.sh txtrecord '.$selected.''));
                 echo "</pre>";
                 echo "<h4>&nbsp;</h4>";
                 echo "<font size=3><b>INFO</b></font>";
@@ -405,7 +405,7 @@ if ($choice == "hinfo") {
 
 		echo "<pre>";
                 echo "<h3>DNS Resolution Path</h3>";
-                echo shell_exec('/usr/bin/nettools.sh search '.$selected.'');
+                echo shell_exec('apps/nettools.sh search '.$selected.'');
                 echo "<br>";
                 echo "</pre>";
 
