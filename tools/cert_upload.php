@@ -12,7 +12,7 @@ if(move_uploaded_file($_FILES['file']['tmp_name'], "$target"))
 
  	//echo "The file ". basename( $_FILES['file']['name']). " has been uploaded";
 	echo "<pre>";
-	echo shell_exec('/usr/bin/convert_certs.sh '.$target.'');
+	echo shell_exec('apps/convert_certs.sh '.$target.'');
 	echo "</pre>";
 
 	include 'page_footer.inc';

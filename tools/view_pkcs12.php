@@ -12,7 +12,7 @@ $target = "/tmp/";
         include 'includes/page_header.inc';
 
         echo "<pre>";
-        echo shell_exec('/usr/bin/display_pkcs12cert.sh '.$target.' '.$pass);
+        echo shell_exec('apps/display_pkcs12cert.sh '.$target.' '.$pass);
         echo "</pre>";
 
         include 'page_footer.inc';
