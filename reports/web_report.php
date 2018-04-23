@@ -9,7 +9,7 @@ if ($choice == "webreport") {
 	$name = $_POST["web"];
 
                 echo "<pre>";
-		echo shell_exec('/usr/bin/webreport.sh '.$name.'');
+		echo shell_exec('apps/webreport.sh '.$name.'');
 		echo "</pre>";
 
 	include 'page_footer.inc';

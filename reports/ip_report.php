@@ -9,7 +9,7 @@ if ($choice == "ipreport") {
 	$name = $_POST["ip"];
 
                 echo "<pre>";
-		echo shell_exec('/usr/bin/ipreport.sh '.$name.'');
+		echo shell_exec('apps/ipreport.sh '.$name.'');
 		echo "</pre>";
 
 	include 'page_footer.inc';
