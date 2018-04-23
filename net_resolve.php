@@ -25,7 +25,7 @@ if ( $choice == "trace" ) {
 		echo "Traceroute Path also shows AS of each router";
 		echo "<br><br>";
 		echo "<pre>";
-		print_r (system('/usr/bin/nettools.sh tracenet '.$name.''));
+		print_r (system('apps/nettools.sh tracenet '.$name.''));
 		echo "</pre>";
 		echo $iptips;
 
@@ -44,7 +44,7 @@ if ( $choice == "ssl" ) {
                 echo "<h4>Certificate Validity for $name</h4>";
                 echo "<br><br>";
                 echo "<pre>";
-                echo shell_exec('/usr/bin/nettools.sh valid_cert '.$name.'');
+                echo shell_exec('apps/nettools.sh valid_cert '.$name.'');
                 echo "</pre>";
 
         include 'includes/page_footer.inc';
@@ -62,7 +62,7 @@ if ( $choice == "rbllookup" ) {
 
 		echo "<h4>Real Time BlackList (RBL) Database Check</h4>";
                 echo "<pre>";
-                print_r (system ('/usr/bin/checkrbl.sh rbl '.$name.''));
+                print_r (system ('apps/checkrbl.sh rbl '.$name.''));
                 echo "</pre>";
 
                 echo "<br>";
@@ -102,19 +102,19 @@ if ( $choice == "route" ) {
                 echo "<h4>Route Information for $name</h4>";
 		echo "<pre>";
 		// experimtantal try Uwhois.com.
-		echo shell_exec('/usr/bin/nettools.sh routeinfo '.$name.'');
+		echo shell_exec('apps/nettools.sh routeinfo '.$name.'');
 		echo "</pre>";
                 echo "<br>";
 
 		echo "<h4>ASN Information for $name</h4>";
                 echo "<pre>";
-                echo shell_exec('/usr/bin/nettools.sh getasn '.$name.'');
+                echo shell_exec('apps/nettools.sh getasn '.$name.'');
                 echo "</pre>";
                 echo "<br>";
 
 		echo "<h4>ASN Peer Information for $name</h4>";
                 echo "<pre>";
-                echo shell_exec('/usr/bin/nettools.sh getasnpeer '.$name.'');
+                echo shell_exec('apps/nettools.sh getasnpeer '.$name.'');
                 echo "</pre>";
                 echo "<br>";
 
@@ -132,13 +132,13 @@ if ( $choice == "asn" ) {
 
 		echo "<h4>ASN Information for</b> - $name</h4>" ;
 		echo "<pre>";
-		echo shell_exec('/usr/bin/nettools.sh getasn '.$name.'');
+		echo shell_exec('apps/nettools.sh getasn '.$name.'');
 		echo "<br><br>";
 		echo "</pre>";
 
 		echo "<h4>ASN Peer Information for $name</h4>" ;
 		echo "<pre>";
-		echo shell_exec('/usr/bin/nettools.sh getasnpeer '.$name.'');
+		echo shell_exec('apps/nettools.sh getasnpeer '.$name.'');
 		echo "<br><br>";
 		echo "</pre>";
 
@@ -162,7 +162,7 @@ if ( $choice == "whois" ) {
 
                 echo "<h4>Whois Information for $name</h4>" ;
 		echo "<pre>";
-		echo shell_exec('/usr/bin/nettools.sh whois '.$name.'');
+		echo shell_exec('apps/nettools.sh whois '.$name.'');
 		echo "</pre>";
                 echo "<br>";
 
@@ -180,7 +180,7 @@ if ( $choice == "scan" ) {
 
                 echo "<h4>Scanning Ports (21,23,25,80,443,8080) on $name</h4>" ;
 		echo "<pre>";
-		echo shell_exec('/usr/bin/nettools.sh scan '.$name.'');
+		echo shell_exec('apps/nettools.sh scan '.$name.'');
 		echo "</pre>";
 		echo "<br><br>";
 
@@ -199,7 +199,7 @@ if ( $choice == "abuse" ) {
 
                 $name = $_POST["abuse"];
 		echo "<pre>";
-		echo shell_exec('/usr/bin/ipreport.sh '.$name.'');
+		echo shell_exec('apps/ipreport.sh '.$name.'');
 		echo "</pre>";
                 echo "<br>";
 
@@ -217,7 +217,7 @@ if ( $choice == "reverseip" ) {
                 $name = $_POST["ip"];
                 echo "<h4>$name resolves to</h4>";
 		echo "<pre>";
-		echo shell_exec('/usr/bin/nettools.sh reverseip '.$name.'');
+		echo shell_exec('apps/nettools.sh reverseip '.$name.'');
 		echo "</pre>";
                 echo "<br>";
 
@@ -241,7 +241,7 @@ if ( $choice == "ipcheck" ) {
 
                 $name = $_POST["ip"];
                 echo "<pre>";
-                echo shell_exec('/usr/bin/ipreport.sh '.$name.'');
+                echo shell_exec('apps/ipreport.sh '.$name.'');
                 echo "</pre>";
 
 	include 'includes/page_footer.inc';
@@ -282,7 +282,7 @@ if ( $choice == "spf" ) {
 
 		echo "<h4>SPF Records for</b> - $name</h4>" ;
 		echo "<pre>";
-		echo shell_exec('/usr/bin/nettools.sh spf '.$name.'');
+		echo shell_exec('apps/nettools.sh spf '.$name.'');
 		echo "<br><br>";
 		echo "</pre>";
 
@@ -307,7 +307,7 @@ if ( $choice == "pagerank" ) {
 
 		echo "<h4>Page Rank Information for</b> - $name</h4>";
 		echo "<pre>";
-                echo shell_exec(system('/usr/bin/nettools.sh pagerank '.$name.''));
+                echo shell_exec(system('apps/nettools.sh pagerank '.$name.''));
                 echo "</pre>";
 
 		echo "<h4>&nbsp;</h4>";
@@ -331,7 +331,7 @@ if ( $choice == "webhost" ) {
 		
 		echo "<h3>Hosting Provider Information</h3>";
 		echo "<pre>";
-		echo shell_exec('/usr/bin/webreport.sh '.$name.'');
+		echo shell_exec('apps/webreport.sh '.$name.'');
 		echo "</pre>";
 
         include 'includes/page_footer.inc';
@@ -348,8 +348,8 @@ if ( $choice == "mailcert" ) {
 
 		echo "<h4><b>Mail Certificate Information for $name </b></h4>";
                 echo "<pre>";
-               //echo shell_exec('/usr/bin/mailcert_check.sh '.$name.'');
-                echo shell_exec('/usr/bin/nettools.sh cert '.$name.'');
+               //echo shell_exec('apps/mailcert_check.sh '.$name.'');
+                echo shell_exec('apps/nettools.sh cert '.$name.'');
                 echo "</pre>";
 
 	include 'includes/page_footer.inc';
@@ -366,7 +366,7 @@ if ( $choice == "webcert" ) {
 
                 echo "<h4><b>Web Certificate for $name </b></h4>";
                 echo "<pre>";
-                echo shell_exec('/usr/bin/nettools.sh webcert '.$name.'');
+                echo shell_exec('apps/nettools.sh webcert '.$name.'');
                 echo "</pre>";
 
         include 'includes/page_footer.inc';
@@ -383,7 +383,7 @@ if ( $choice == "resolveip" ) {
 		
                 echo "<h4><b>Information for $selected </b></h4>";
 		echo "<pre>";
-		echo shell_exec('/usr/bin/nettools.sh ipcheck '.$name.'');
+		echo shell_exec('apps/nettools.sh ipcheck '.$name.'');
 		echo "<br><br>";
 		echo "</pre>";
 
@@ -419,7 +419,7 @@ if ( $choice == "dnspropogate" ) {
 
 	$name = $_POST["ip"];
 		echo "<pre>";
-		echo shell_exec('/usr/bin/dnspropogationcheck.sh '.$name.'');
+		echo shell_exec('apps/dnspropogationcheck.sh '.$name.'');
 		echo "<br><br>";
 		echo "</pre>";
 
@@ -436,7 +436,7 @@ if ( $choice == "zone" ) {
 
         $name = $_POST["zone"];
                 echo "<pre>";
-                echo shell_exec('/usr/bin/zonecheck --verbose=i,x,d '.$name.'');
+                echo shell_exec('apps/zonecheck --verbose=i,x,d '.$name.'');
                 echo "<br><br>";
                 echo "</pre>";
 
@@ -453,7 +453,7 @@ if ( $choice == "dnstracer" ) {
 
         $name = $_POST["dnstracer"];
                 echo "<pre>";
-                echo shell_exec('/usr/bin/dnstracer -r 1 -o '.$name.'');
+                echo shell_exec('apps/dnstracer -r 1 -o '.$name.'');
                 echo "<br><br>";
                 echo "</pre>";
 
