@@ -9,7 +9,7 @@ if ($choice == "domainreport") {
 	$name = $_POST["domain"];
 
                 echo "<pre>";
-		echo shell_exec('/usr/bin/domain_reports.sh '.$name.'');
+		echo shell_exec('apps/domain_reports.sh '.$name.'');
 		echo "</pre>";
 
 	include 'page_footer.inc';
