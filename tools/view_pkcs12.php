@@ -7,7 +7,7 @@ $target = "/tmp/";
  $ok=1;
  if(move_uploaded_file($_FILES['file']['tmp_name'], "$target"))
  {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
