@@ -436,7 +436,7 @@ if ( $choice == "zone" ) {
 
         $name = $_POST["zone"];
                 echo "<pre>";
-                echo shell_exec('apps/zonecheck --verbose=i,x,d '.$name.'');
+                echo shell_exec('/usr/bin/zonecheck --verbose=i,x,d '.$name.'');
                 echo "<br><br>";
                 echo "</pre>";
 
@@ -453,7 +453,7 @@ if ( $choice == "dnstracer" ) {
 
         $name = $_POST["dnstracer"];
                 echo "<pre>";
-                echo shell_exec('apps/dnstracer -r 1 -o '.$name.'');
+                echo shell_exec('/usr/bin/dnstracer -r 1 -o '.$name.'');
                 echo "<br><br>";
                 echo "</pre>";
 
