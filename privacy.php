@@ -35,18 +35,6 @@ echo "</tr>";
 echo "</table>";
 echo "</center";
 
-echo "<center>";
-echo "<table width=50%>";
-echo "<tr>
-	<td align=left>";
-
-
-		<iframe frameborder="no" width="300px" height="200px" src="http://fusion.opensitesolutions.com/server_services/piwik/index.php?module=CoreAdminHome&action=optOut&language=en">
-		</iframe>
-
-	echo "</td>";
-echo "</tr>";
-echo "</table>";
 
 include 'lookups.inc';
 include 'adds/google_add.inc';
