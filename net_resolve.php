@@ -402,7 +402,7 @@ if ( $choice == "cert" ) {
                 $tempfile = tempnam("/tmp","");
                 $handle = fopen($tempfile,"w");
                 fwrite($handle, $cert);
-                echo shell_exec('/var/www/html/fixyourip/library/openssl/convert_openssl.sh '.$tempfile.'');
+                echo shell_exec('/var/www/fixyourip/library/openssl/convert_openssl.sh '.$tempfile.'');
 		echo "<br><br>";
                 echo "</pre>";
 

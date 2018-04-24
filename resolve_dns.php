@@ -1,5 +1,5 @@
 <?php
-set_include_path ("/var/www/html/fixyourip.com/");
+set_include_path ("/var/www/fixyourip.com/");
 $choice = $_POST["dns_options"];
 $webforminput = $_POST["ip"];
 $selected = escapeshellcmd($webforminput);
@@ -41,7 +41,7 @@ $option = array (
 	);
 
 if ($choice == "a") {
-	set_include_path ("/var/www/html/fixyourip/");
+	set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -73,7 +73,7 @@ if ($choice == "a") {
 	}
 
 if ($choice == "ptr") {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -99,7 +99,7 @@ if ($choice == "ptr") {
 
 
 if ($choice == "srv") {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -124,7 +124,7 @@ if ($choice == "srv") {
         }
 
 if ($choice == "any") {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -151,7 +151,7 @@ if ($choice == "any") {
 
 
 if ($choice == "all") {
-	set_include_path ("/var/www/html/fixyourip/");
+	set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -202,7 +202,7 @@ if ($choice == "all") {
         }
 
 if ($choice == "mx") {
-	set_include_path ("/var/www/html/fixyourip/");
+	set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -248,7 +248,7 @@ if ($choice == "mx") {
 	}
 
 if ($choice == "soa") {
-	set_include_path ("/var/www/html/fixyourip/");
+	set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -277,7 +277,7 @@ if ($choice == "soa") {
 	}
 
 if ($choice == "ns") {
-	set_include_path ("/var/www/html/fixyourip/");
+	set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -317,7 +317,7 @@ if ($choice == "ns") {
 	}
 
 if ($choice == "cname") {
-	set_include_path ("/var/www/html/fixyourip/");
+	set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -347,7 +347,7 @@ if ($choice == "cname") {
 	}
 
 if ($choice == "txt") {
-	set_include_path ("/var/www/html/fixyourip/");
+	set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -379,7 +379,7 @@ if ($choice == "txt") {
         }
 
 if ($choice == "aaaa") {
-	set_include_path ("/var/www/html/fixyourip/");
+	set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -399,7 +399,7 @@ if ($choice == "aaaa") {
         }
 
 if ($choice == "hinfo") {
-	set_include_path ("/var/www/html/fixyourip/");
+	set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
