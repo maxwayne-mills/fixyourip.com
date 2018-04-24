@@ -7,7 +7,6 @@ echo "<table width=50%>";
 echo "<tr>";
         echo "<td align=left>";
                 include 'adds/google_add.inc';
-                echo "<br>";
                 echo "<table class=table>";
                 echo "<tr valign=bottom>";
 			echo "<td>";
@@ -318,7 +317,7 @@ echo "<tr>";
 echo "</tr>";
 echo "</table>";
 
-include 'adds/google_add.inc';
+include 'includes/adds/google_add.inc';
 echo "</center>";
 include 'footer.inc';
 ?>
