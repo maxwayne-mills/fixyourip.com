@@ -1,5 +1,5 @@
 <?php
-set_include_path ('.:includes:../../incldues');
+set_include_path ('.:includes:');
 include 'header.inc';
 
 echo "<center>";
@@ -317,7 +317,7 @@ echo "<tr>";
 echo "</tr>";
 echo "</table>";
 
-include 'includes/adds/google_add.inc';
+include 'adds/google_add.inc';
 echo "</center>";
 include 'footer.inc';
 ?>
