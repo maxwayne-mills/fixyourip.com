@@ -72,9 +72,10 @@ if ( $choice == "rbllookup" ) {
         include 'includes/footer.inc';
 }
 
+
 if ( $choice == "ping" ) {
 	set_include_path ("/var/www/fixyourip.com/");
-        include 'includes/header.inc';
+        include 'includes/header_ip.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["ip"];
 
