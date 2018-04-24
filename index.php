@@ -1,5 +1,5 @@
 <?php
-set_include_path ('.:includes:');
+set_include_path (".:includes:../../includes");
 include 'header.inc';
 
 echo "<center>";
