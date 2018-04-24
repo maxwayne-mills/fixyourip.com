@@ -359,7 +359,7 @@ if ( $choice == "mailcert" ) {
 }
 
 if ( $choice == "webcert" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["webcert"];
@@ -376,7 +376,7 @@ if ( $choice == "webcert" ) {
 }
 
 if ( $choice == "resolveip" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["ip"];
@@ -394,7 +394,7 @@ if ( $choice == "resolveip" ) {
 }
 
 if ( $choice == "cert" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 	$cert = $_POST["cert"];	
@@ -413,7 +413,7 @@ if ( $choice == "cert" ) {
 }
 
 if ( $choice == "dnspropogate" ) {
-	 set_include_path ("/var/www/html/fixyourip/");
+	 set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -430,7 +430,7 @@ if ( $choice == "dnspropogate" ) {
 }
 
 if ( $choice == "zone" ) {
-         set_include_path ("/var/www/html/fixyourip/");
+         set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -447,7 +447,7 @@ if ( $choice == "zone" ) {
 }
 
 if ( $choice == "dnstracer" ) {
-         set_include_path ("/var/www/html/fixyourip/");
+         set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
