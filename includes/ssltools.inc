@@ -14,16 +14,5 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
     <link href="/style.css" rel="stylesheet" type="text/css" />
-
-
-    <!-- start google analytics --->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-9703614120192799",
-      enable_page_level_ads: true
-    });
-</script>
-    <!--- end google analytics --->
 </head>
 <body>
