@@ -16,7 +16,7 @@ $iptips = "
 ";
 
 if ( $choice == "trace" ) {
-	set_include_path ("/var/www/html/fixyourip.com/");
+	set_include_path ("/var/www/fixyourip.com/");
 	include 'includes/header.inc';
 	include 'includes/page_header.inc';
 		$name = $_POST["ip"];
@@ -36,7 +36,7 @@ if ( $choice == "trace" ) {
 }
 
 if ( $choice == "ssl" ) {
-        set_include_path ("/var/www/html/fixyourip.com/");
+        set_include_path ("/var/www/fixyourip.com/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["ip"];
@@ -55,7 +55,7 @@ if ( $choice == "ssl" ) {
 
 
 if ( $choice == "rbllookup" ) {
-	set_include_path ("/var/www/html/fixyourip/");
+	set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["ip"];
@@ -73,7 +73,7 @@ if ( $choice == "rbllookup" ) {
 }
 
 if ( $choice == "ping" ) {
-	set_include_path ("/var/www/html/fixyourip.com/");
+	set_include_path ("/var/www/fixyourip.com/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["ip"];
@@ -94,7 +94,7 @@ if ( $choice == "ping" ) {
 }
 
 if ( $choice == "route" ) {
-        set_include_path ("/var/www/html/fixyourip.com/");
+        set_include_path ("/var/www/fixyourip.com/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["ip"];
@@ -125,7 +125,7 @@ if ( $choice == "route" ) {
 }
 
 if ( $choice == "asn" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["ip"];
@@ -155,7 +155,7 @@ if ( $choice == "asn" ) {
 }
 
 if ( $choice == "whois" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["whois"];
@@ -173,7 +173,7 @@ if ( $choice == "whois" ) {
 }
 
 if ( $choice == "scan" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["ip"];
@@ -193,7 +193,7 @@ if ( $choice == "scan" ) {
 }
 
 if ( $choice == "abuse" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -210,7 +210,7 @@ if ( $choice == "abuse" ) {
 }
 
 if ( $choice == "reverseip" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -235,7 +235,7 @@ if ( $choice == "reverseip" ) {
 }
 
 if ( $choice == "ipcheck" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -251,7 +251,7 @@ if ( $choice == "ipcheck" ) {
 }
 
 if ( $choice == "malware" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
 
@@ -275,7 +275,7 @@ if ( $choice == "malware" ) {
 }
 
 if ( $choice == "spf" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["ip"];
@@ -300,7 +300,7 @@ if ( $choice == "spf" ) {
 }
 
 if ( $choice == "pagerank" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["ip"];
@@ -324,7 +324,7 @@ if ( $choice == "pagerank" ) {
 }
 
 if ( $choice == "webhost" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["ip"];
@@ -341,15 +341,15 @@ if ( $choice == "webhost" ) {
 }
 
 if ( $choice == "mailcert" ) {
-        set_include_path ("/var/www/html/fixyourip/");
+        set_include_path ("/var/www/fixyourip/");
         include 'includes/header.inc';
         include 'includes/page_header.inc';
                 $name = $_POST["mailcert"];
 
 		echo "<h4><b>Mail Certificate Information for $name </b></h4>";
                 echo "<pre>";
-               //echo shell_exec('apps/mailcert_check.sh '.$name.'');
-                echo shell_exec('apps/nettools.sh cert '.$name.'');
+                echo shell_exec('apps/mailcert_check.sh '.$name.'');
+                //echo shell_exec('apps/nettools.sh cert '.$name.'');
                 echo "</pre>";
 
 	include 'includes/page_footer.inc';
